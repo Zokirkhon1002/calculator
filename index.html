@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iPhone Calculator</title>
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="top-container">
+      <div class="clock">
+        <span class="hour"></span>:<span class="minute"></span>
+      </div>
+      <div class="evr">
+        <div class="cam"></div>
+        <dir class="line"></dir>
+      </div>
+      <div class="status">
+        <img src="status.png" alt="Status">
+      </div>
+    </div>
+    <input type="text"  id="screen" placeholder="0" readonly>
+    <div class="buttons-container">
+      <div class="button function ac" onclick="document.getElementById('screen').value = ''">AC</div>
+      <div class="button function pm" onclick="draw('-')">+/-</div>
+      <div class="button function percent" onclick="draw('%')">%</div>
+      <div class="button operator division" onclick="draw('/')">÷</div>
+      <div class="button number-7" onclick="draw(7)">7</div>
+      <div class="button number-8" onclick="draw(8)">8</div>
+      <div class="button number-9" onclick="draw(9)">9</div>
+      <div class="button operator multiplication" onclick="draw('*')">×</div>
+      <div class="button number-4" onclick="draw(4)">4</div>
+      <div class="button number-5" onclick="draw(5)">5</div>
+      <div class="button number-6" onclick="draw(6)">6</div>
+      <div class="button operator subtraction" onclick="draw('-')">−</div>
+      <div class="button number-1" onclick="draw(1)">1</div>
+      <div class="button number-2" onclick="draw(2)">2</div>
+      <div class="button number-3" onclick="draw(3)">3</div>
+      <div class="button operator addition" onclick="draw('+')">+</div>
+      <div class="button number-0" onclick="draw(0)">0</div>
+      <div class="button decimal" onclick="draw('.')">.</div>
+      <div class="button operator equal" onclick="result()">=</div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+<script src="JS/index.js"></script>
+</body>
+</html>
